@@ -1,0 +1,49 @@
+<nz-card nzTitle="Tables列表" [nzBordered]="false">
+  <nz-table #tableList
+            [nzData]="tableListData"
+            [nzSize]="'middle'"
+            [nzBordered]="false"
+            [nzScroll]="{x: '1100px'}"
+            [nzShowSizeChanger]="false"
+            class="card-table highlight-th">
+    <thead nzSingleSort>
+    <tr>
+      <th nzWidth="200px" nzLeft="0px" class="card-th">Table名称</th>
+      <th nzWidth="250px" class="card-th">备注</th>
+      <th nzWidth="250px" class="card-th">最近更新时间</th>
+      <th nzWidth="100px" class="card-th">Records</th>
+      <th nzWidth="100px" nzRight="0px" class="card-th">硬盘占用(MB)</th>
+      <!--<th nzShowSort nzSortKey="startOffset" nzWidth="150px" style="padding-left: 24px!important;">启动位点</th>-->
+      <!--<th nzShowSort nzSortKey="gmtOperator" nzWidth="120px" style="padding-left: 12px!important;">最近操作人</th>-->
+      <!--<th nzWidth="150px" style="padding-left: 36px!important;">操作</th>-->
+    </tr>
+    </thead>
+
+    <tbody>
+    <tr *ngFor="let table of tableList.data">
+      <!--<td class="instance-name-td isfull card-td">-->
+        <!--<a href="_blank" class="bold instance-name ellipsis" nz-tooltip="test1">-->
+          <!--<span nz-tooltip class="fill-width">{{table.name}}</span>-->
+        <!--</a>-->
+      <!--</td>-->
+      <td nzLeft="0px" class="card-td">{{table.name}}</td>
+      <td class="card-td"> {{table.remark}}
+        <!--<app-wink-instance-status-bar></app-wink-instance-status-bar>-->
+      </td>
+      <td>{{table.lastTime}}</td>
+      <td class="card-td">{{table.recordCount}}</td>
+      <td nzRight="0px" class="card-td">{{table.diskSpace}}</td>
+      <!--<td>{{instance.delay}} s</td>-->
+      <!--<td>{{instance.resourceSlot}} CU</td>-->
+      <!--<td>{{instance.startOffset}}</td>-->
+      <!--<td>{{instance.gmtOperator}}</td>-->
+      <!--<td>-->
+      <!--<app-wink-operate-instance-action></app-wink-operate-instance-action>-->
+      <!--</td>-->
+    </tr>
+
+
+    </tbody>
+  </nz-table>
+
+</nz-card>

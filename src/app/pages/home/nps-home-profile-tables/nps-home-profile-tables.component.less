@@ -1,0 +1,160 @@
+:host ::ng-deep .ant-card-head {
+  background: #404040;
+  border-bottom: 1px solid #303030;
+  padding: 0 24px;
+  border-radius: 2px 2px 0 0;
+  zoom: 1;
+  margin-bottom: -1px;
+  min-height: 48px;
+}
+
+:host ::ng-deep .ant-card-head-title {
+  font-size: 16px;
+  padding: 16px 0;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  color: rgba(255, 255, 255, .85);
+  font-weight: 500;
+  display: inline-block;
+  flex: 1;
+}
+
+//nz-card {
+//  & ::ng-deep .ant-card-body {
+//    height: ~"calc(100vh - 164px)";
+//    position: relative;
+//    padding: 0;
+//
+//    .ant-table.ant-table-small{
+//      //.ant-table-header{
+//      //  margin-bottom: -12px;
+//      //  padding-bottom: 0px;
+//      //}
+//
+//
+//      .card-th{
+//        padding-left: 24px!important;
+//        width: 240px;
+//        max-width: 240px;
+//        position: relative;
+//      }
+//
+//      .card-td {
+//        padding-left:24px!important;
+//        //text-align: center;
+//        width: 300px;
+//        max-width: 300px;
+//        position: relative;
+//      }
+//
+//      .instance-name{
+//        display: inline-block;
+//        width: ~"calc(100% - 32px)";
+//      }
+//
+//      .ellipsis{
+//        overflow: hidden;
+//        white-space: nowrap;
+//        text-overflow: ellipsis;
+//      }
+//
+//      .bold{
+//        font-weight: 500;
+//      }
+//
+//      .instance-name-td{
+//        width: 300px;
+//        max-width: 300px;
+//        position: relative;
+//      }
+//
+//
+//      .ant-table-header{
+//        //height: ;
+//        margin-bottom: 0px;
+//        padding-bottom: 0;
+//      }
+//
+//      .fill-width{
+//        max-width: 100%;
+//        display: inline-block;
+//      }
+//    }
+//  }
+//
+//  & ::ng-deep .ant-table-scroll{
+//    height: ~"calc(100vh - 164px)";
+//  }
+//}
+//
+//.highlight-th th{
+//  border-radius: 0!important;
+//  background: #505050!important;
+//
+//}
+//
+//
+//.subtitle{
+//  color: rgba(255,255,255,.85);
+//  margin-left: 17px;
+//  font-size: 14px;
+//  line-height: 16px;
+//
+//  em {
+//    color: #1890ff;
+//    font-weight: 700;
+//    font-style: normal;
+//    margin: 0 6px
+//  }
+//}
+//
+//.top-operate{
+//  position: absolute;
+//  right: 17.5px;
+//  top: 13px;
+//
+//  nz-input-group.side{
+//    width: 160px;
+//  }
+//  button{
+//    margin-left: 8px;
+//  }
+//}
+
+//去除border
+.card-table ::ng-deep .ant-table {
+  border-radius: 0;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  margin-top: 1px;
+  //background: none;
+  //1d709a
+}
+
+// 去除hover住的时候的青色
+:host ::ng-deep .ant-table-tbody > tr:hover > td {
+  background: none;
+}
+
+//.highlight-th th{
+//  border-radius: 0!important;
+//  background: #505050!important;
+//}
+/// table 拓展开
+nz-card {
+  & ::ng-deep .ant-card-body {
+    padding: 0;
+  }
+}
+
+
+///
+.card-th{
+  padding-left: 24px!important;
+}
+
+.card-td{
+  padding-left: 24px!important;
+}
